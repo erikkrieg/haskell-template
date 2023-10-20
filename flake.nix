@@ -8,7 +8,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; };
-        hPkgs = pkgs.haskell.packages."ghc94"; # need to match Stackage LTS version from stack.yaml resolver
+        hPkgs = pkgs.haskell.packages."ghc946"; # need to match Stackage LTS version from stack.yaml resolver
         tools = [
           hPkgs.ghc # GHC compiler in the desired version (will be available on PATH)
           hPkgs.ghcid # Continuous terminal Haskell compile checker
